@@ -7,11 +7,7 @@ export interface VoteStatsProps {
   positiveRate: number;
 }
 
-export const VoteStats = ({
-  votes,
-  totalVotes,
-  positiveRate,
-}: VoteStatsProps) => {
+const VoteStats = ({ votes, totalVotes, positiveRate }: VoteStatsProps) => {
   return (
     <div className={styles.container}>
       <p className={styles.stat}>
@@ -32,3 +28,5 @@ export const VoteStats = ({
     </div>
   );
 };
+
+export default VoteStats;
